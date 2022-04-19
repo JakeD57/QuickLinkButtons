@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap');
+.accordion {
+  max-width: 290px;
+  box-shadow: none;
+  border-radius: 0px;
+  overflow: hidden;
+  background: #34434c;
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  
+  
+}
+
+.accordion__label,
+.accordion__content {
+  padding: 14px 20px;
+  border-bottom: 4px solid white; 
+}
+
+.accordion__label {
+  display: block;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.accordion__label:hover {
+  background: #0f1316;
+}
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+  
+}
+
+.accordion__content {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
+.custom-link {
+  padding: 14px 20px;
+  display: block;
+  border-bottom: 4px solid white; 
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: background 0.3s;
+  
+}
+
+.custom-link:hover {
+ background: #0f1316;
+  
+}
+
+.custom-link:active {
+ background: #0f1316;
+  
+}
+.q-link-2 {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.q-link-2:hover {
+  color: #abd5f5;
+}
+
+.custom-btn {
+    background: transparent;
+    display: block;
+    padding: 10px;
+    border: 2px solid #5c686e;
+    text-decoration: none;
+    color: #34434c;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.custom-btn:hover {
+    background: #5c686e;
+    color: #ffffff;
+    border: 2px solid #5c686e;
+   
+}
+
+</style>
+</head>
+<body>
+    <div class="accordion">
+        
+        
+        <div>
+            <input type="checkbox" name="example_accordion" id="Aquatics" class="accordion__input">
+            <label for="Aquatics" class="accordion__label"><a class="q-link-2" href="/Staging/Athletics_(1)/Aquatics.aspx">Aquatics</a></label>
+            <div class="accordion__content">
+              <a class="custom-btn" href="#">Aquatics Rules + Etiquette</a>
+              <a class="custom-btn" href="#">Event Images</a>
+              
+            </div>
+          </div>
+          
+          <div>
+            <input type="checkbox" name="example_accordion" id="Badminton" class="accordion__input">
+            <label for="Badminton" class="accordion__label"><a class="q-link-2" href="/Staging/Athletics_(1)/Badminton.aspx">Badminton</a></label>
+            <div class="accordion__content">
+              <a class="custom-btn" href="#">Event Images</a>
+              
+            </div>
+          </div>
+
+          <div>
+            <input type="checkbox" name="example_accordion" id="Breakwater Activities" class="accordion__input">
+            <label for="Breakwater Activities" class="accordion__label"><a class="q-link-2" href="/Staging/Athletics_(1)/Breakwater_Activities.aspx">Breakwater Activities</a></label>
+            <div class="accordion__content">
+              <a class="custom-btn" href="#">Breakwater Rules</a>
+              
+            </div>
+          </div>
+        
+        <div>
+            <a class="custom-link" href="/Staging/Athletics_(1)/Dragon_Boating.aspx">Dragon Boating</a>
+        </div>
+
+        <div>
+          <input type="checkbox" name="example_accordion" id="Fitness" class="accordion__input">
+          <label for="Fitness" class="accordion__label"><a class="q-link-2" href="/Staging/Athletics_(1)/Fitness.aspx">Fitness</a></label>
+          <div class="accordion__content">
+            <a class="custom-btn" href="#">Fitness Team</a>
+            <a class="custom-btn" href="#">Fitness Rules + Regulations</a>
+          </div>
+        </div>
+
+
+        <div>
+            <a class="custom-link" href="/Staging/Athletics_(1)/Golf_Skiing.aspx">Golf</a>
+        </div>
+        <div>
+            <a class="custom-link" href="/Staging/Athletics_(1)/Karate.aspx">Karate</a>
+        </div>
+        
+        <div>
+          <input type="checkbox" name="example_accordion" id="Lakefront sports" class="accordion__input">
+          <label for="Lakefront sports" class="accordion__label"><a class="q-link-2" href="/Staging/Athletics_(1)/Water_Sports.aspx">Lakefront Sports + Activities</a></label>
+          <div class="accordion__content">
+            <a class="custom-btn" href="#">Event Images</a>
+            
+          </div>
+        </div>
+        
+        
+        
+        <div>
+            <a class="custom-link" href="/Staging/Athletics_(1)/Skiing.aspx">Skiing</a>
+        </div>
+
+        <div>
+          <input type="checkbox" name="example_accordion" id="Tennis" class="accordion__input">
+          <label for="Tennis" class="accordion__label"><a class="q-link-2" href="/Staging/Athletics_(1)/Tennis.aspx">Tennis</a></label>
+          <div class="accordion__content">
+            <a class="custom-btn" href="#">Tennis Professionals</a>
+            <a class="custom-btn" href="#">New Member Welcome</a>
+            <a class="custom-btn" href="#">Event Images</a>
+            
+          </div>
+        </div>
+
+        <div>
+          <input type="checkbox" name="example_accordion" id="Yachting" class="accordion__input">
+          <label for="Yachting" class="accordion__label"><a class="q-link-2" href="/Staging/Athletics_(1)/Yatching.aspx">Yachting</a></label>
+          <div class="accordion__content">
+            <a class="custom-btn" href="#">Yachting Handbook</a>
+            <a class="custom-btn" href="#">Event Images</a>
+            
+          </div>
+        </div>
+        
+      </div>
+</body>
+</html>
