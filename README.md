@@ -1,4 +1,4 @@
 # QuickLinkButtons
-Some custom quick link buttons I re-designed.
+Custom quick link buttons re-design.
 
 [Link to Work](https://quick-link-buttons.netlify.app/)
